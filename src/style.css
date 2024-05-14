@@ -57,14 +57,16 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
+.time {
+  font-weight: 600;
+}
 strong {
   color: #2e94b9;
 }
 .icon {
   font-size: 50px;
-  color: black;
   position: relative;
-  right: 10%;
+  right: 2%;
   top: 30%;
 }
 
@@ -72,22 +74,21 @@ strong {
   font-size: 70px;
   color: black;
   position: relative;
-  top: 30%;
-}
-.degrees {
-  font-size: 25px;
-  position: relative;
-  bottom: -7%;
+  top: 12%;
+  font-weight: 700;
 }
 .celsius {
   color: black;
+  font-size: 30px;
+  position: relative;
+  bottom: 8%;
 }
-.fahrenheit {
-  color: #2e94b9;
-}
-.fahrenheit:hover {
-  text-decoration: underline;
-  cursor: pointer;
+h3 {
+  border-top: 1px solid rgba(46, 148, 185, 0.3);
+  padding-top: 10px;
+  margin-top: 0;
+  line-height: 40px;
+  font-weight: 600;
 }
 .weather-forecast {
   display: flex;
@@ -100,19 +101,19 @@ strong {
   font-weight: 700;
 }
 .small-icon {
-  text-align: center;
+  display: block;
+  margin: 0 5px;
   font-size: 60px;
-  margin: 5px;
 }
 .weather-forecast-max-temp {
   font-weight: 500;
   color: #2e94b9;
-  padding: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .weather-forecast-min-temp {
   font-weight: 200;
   color: #2e94b9;
-  padding: 5px;
 }
 footer {
   text-align: center;
