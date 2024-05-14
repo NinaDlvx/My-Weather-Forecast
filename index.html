@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>My selfmade Weather Forecast</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -22,17 +24,17 @@
       <main>
         <div class="weather">
           <div>
-            <h1>Paris</h1>
+            <h1 id="city"></h1>
             <p>
-              <span>14:30</span>,
-              <span>cloudy</span>
-              <br />Humidity: <strong>7%</strong>, Wind:
-              <strong>5 km/h</strong>
+              <span id="time"></span>,
+              <span id="condition"></span>
+              <br />Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
             </p>
           </div>
           <div>
-            <span class="icon">☀</span>
-            <span class="highlighted-temperature">22</span>
+            <span class="icon" id="icon"></span>
+            <span class="highlighted-temperature" id="temperature"></span>
             <span class="degrees">
               <span class="celsius">°C</span> |<span class="fahrenheit"
                 >°F</span
@@ -41,38 +43,7 @@
           </div>
         </div>
         <br />
-        <div class="weather-forecast">
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="small-icon">☀</div>
-            <span class="weather-forecast-max-temp">20°C</span>
-            <span class="weather-forecast-min-temp">15°C</span>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="small-icon">☀</div>
-            <span class="weather-forecast-max-temp">20°C</span>
-            <span class="weather-forecast-min-temp">15°C</span>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="small-icon">☀</div>
-            <span class="weather-forecast-max-temp">20°C</span>
-            <span class="weather-forecast-min-temp">15°C</span>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="small-icon">☀</div>
-            <span class="weather-forecast-max-temp">20°C</span>
-            <span class="weather-forecast-min-temp">15°C</span>
-          </div>
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="small-icon">☀</div>
-            <span class="weather-forecast-max-temp">20°C</span>
-            <span class="weather-forecast-min-temp">15°C</span>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         <p>
@@ -94,5 +65,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
