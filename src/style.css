@@ -2,6 +2,7 @@ body {
   background-color: #acdcee;
   color: #475053;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
 }
 .container {
   background-color: #f0fbff;
@@ -63,25 +64,28 @@ p {
 strong {
   color: #2e94b9;
 }
+.highlighted-current-temp {
+  max-width: 100%;
+}
 .icon {
-  font-size: 50px;
+  max-width: 100%;
   position: relative;
-  right: 2%;
   top: 30%;
 }
 
 .highlighted-temperature {
-  font-size: 70px;
+  font-size: 500%;
+  line-height: 5%;
   color: black;
   position: relative;
-  top: 12%;
+  top: 20%;
   font-weight: 700;
 }
 .celsius {
   color: black;
-  font-size: 30px;
+  font-size: 200%;
   position: relative;
-  bottom: 8%;
+  bottom: -2%;
 }
 h3 {
   border-top: 1px solid rgba(46, 148, 185, 0.3);
@@ -93,7 +97,7 @@ h3 {
 .weather-forecast {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  max-width: 100%;
 }
 .weather-forecast-date {
   text-align: center;
